@@ -15,7 +15,8 @@ Declare this method in PayUPaymentResultViewController.h file.
 	#define INIT  @"init"
 
 2) Conform “CBConnectionHandlerDelegate”  delegate
-    @interface PayUPaymentResultViewController () <UIWebViewDelegate,CBConnectionHandlerDelegate>
+	
+	@interface PayUPaymentResultViewController () <UIWebViewDelegate,CBConnectionHandlerDelegate>
 
 3) Create following properties
 
