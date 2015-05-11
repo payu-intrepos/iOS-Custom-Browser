@@ -2,11 +2,6 @@ Current version is 1.0.
 
 #Steps to enable CUSTOM BROWSER with PayU iOS SDK
 
-#Changes to PayUPaymentResultViewController.h
-Declare this method in PayUPaymentResultViewController.h file.
-
-    -(void) loadJavascript;
-
 #Changes to PayUPaymentResultViewController.m
 1) Add these imports and defines
 
