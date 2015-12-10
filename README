@@ -1,1 +1,50 @@
-iOS Custom Browser test
+# Integrating CB with iOS SDK 
+
+*  Download **iOS-CustomBrowserkit** version 4.0 from [here](https://github.com/payu-intrepos/iOS-Custom-Browser.git) .
+
+*  Drag and drop the extracted content (two items - a folder and a static lib) into your project
+
+*  Add **libz.dylib** libraries into your project
+
+*  Identify UIWebView implementation file (where implemented the logic for populating UIWebView  during 
+payment (e.g. resultWebViewController)
+
+*  Make sure you have confirmed **UIWebViewDelegate protocol** in this file.
+
+             @interface resultWebViewController () <UIWebViewDelegate>
+
+*  Import a main CB header file on top of resultWebViewController.h
+
+                #import "PayU_CB_SDK.h"
+
+*  import **WebKit.framwork** into the app
+
+*  Create a property of type **CBConnection** in resultWebViewController Class
+
+                @property (strong, nonatomic) CBConnection *CBC;
+
+*  Implement the code at the end of viewDidLoad method as follows:
+        
+                _CBC = [[CBConnection alloc]init:self.view webView:_resultWebView];
+                    _CBC.isWKWebView = NO;
+                    _CBC.cbServerID = CB_SERVER_ID;
+                // in case if you do not have activity indicator in your App call payUActivityIndicator
+                    [_CBC payUActivityIndicator];
+
+                    [_CBC initialSetup];
+*  Implement the code at the start of **UIWebView Delegate** methods as follows:            
+            
+                    - (void)webViewDidFinishLoad:(UIWebView *)webView;
+                    {    
+                        [_CBC payUwebViewDidFinishLoad:webView];
+                    }
+
+                    -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request         navigationType:(UIWebViewNavigationType)naavigationType 
+                    {    
+                        [_CBC payUwebView:webView shouldStartLoadWithRequest:request];
+                    }
+*  In SDK, please add the below line in payuconstant.h class:
+
+                #define CB_SERVER_ID 2
+
+*  Now compile and run your project. You will be able to see Custom Browser. 
