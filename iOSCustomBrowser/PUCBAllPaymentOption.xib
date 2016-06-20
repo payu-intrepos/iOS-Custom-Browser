@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PUCBAllPaymentOption">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3F-8G-rqg">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="LyW-n2-8z9"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an option for Faster Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5h-N5-AWB">
+                    <rect key="frame" x="0.0" y="38" width="600" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aiz-f5-7TC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.5607843137254902" green="0.55294117647058827" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="retry…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9n-ag-aRC">
+                    <rect key="frame" x="0.0" y="64" width="600" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="62t-jc-IZZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.56078431370000004" green="0.55294117649999996" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBX-lJ-goe" userLabel="Middle View">
+                    <rect key="frame" x="190" y="86" width="220" height="106"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ne-S7-zgx" userLabel="Password">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="Tc4-4z-IuX"/>
+                                <constraint firstAttribute="width" constant="80" id="nzk-Va-00g"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="PUCBPasswordIcon">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedBtnPassword:" destination="iN0-l3-epB" eventType="touchUpInside" id="f4H-NU-QBL"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8A-o8-QL0">
+                            <rect key="frame" x="0.0" y="85" width="80" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Vml-UK-vpQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.5607843137254902" green="0.55294117647058827" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VF-pW-KCi" userLabel="OTP">
+                            <rect key="frame" x="140" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="4a4-3i-tp8"/>
+                                <constraint firstAttribute="height" constant="80" id="H52-kK-1Aw"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="PUCBOtpIcon">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedBtnOTP:" destination="iN0-l3-epB" eventType="touchUpInside" id="Czj-xv-u8j"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0v-R4-W9I">
+                            <rect key="frame" x="140" y="85" width="80" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="MFA-eF-CtM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.56078431370000004" green="0.55294117649999996" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="y8A-o8-QL0" secondAttribute="bottom" id="081-Hs-MoB"/>
+                        <constraint firstAttribute="width" constant="220" id="280-m2-r9B"/>
+                        <constraint firstAttribute="trailing" secondItem="T0v-R4-W9I" secondAttribute="trailing" id="43k-Xz-ZMc"/>
+                        <constraint firstAttribute="bottom" secondItem="T0v-R4-W9I" secondAttribute="bottom" id="6IS-yc-CB4"/>
+                        <constraint firstItem="1VF-pW-KCi" firstAttribute="centerX" secondItem="cBX-lJ-goe" secondAttribute="centerX" priority="750" id="BmD-sG-erx"/>
+                        <constraint firstItem="y8A-o8-QL0" firstAttribute="leading" secondItem="cBX-lJ-goe" secondAttribute="leading" id="DOr-6p-ZCr"/>
+                        <constraint firstItem="y8A-o8-QL0" firstAttribute="top" secondItem="3Ne-S7-zgx" secondAttribute="bottom" constant="5" id="GtC-Si-L0p"/>
+                        <constraint firstItem="1VF-pW-KCi" firstAttribute="leading" secondItem="3Ne-S7-zgx" secondAttribute="trailing" constant="60" id="Ofg-pu-3De"/>
+                        <constraint firstItem="T0v-R4-W9I" firstAttribute="centerY" secondItem="1VF-pW-KCi" secondAttribute="centerY" id="OrA-HK-e5D"/>
+                        <constraint firstItem="1VF-pW-KCi" firstAttribute="top" secondItem="cBX-lJ-goe" secondAttribute="top" id="Pp3-xW-mRd"/>
+                        <constraint firstItem="T0v-R4-W9I" firstAttribute="centerX" secondItem="1VF-pW-KCi" secondAttribute="centerX" priority="250" id="ROk-Xk-0Wk"/>
+                        <constraint firstItem="T0v-R4-W9I" firstAttribute="top" secondItem="1VF-pW-KCi" secondAttribute="bottom" constant="5" id="be8-NR-af2"/>
+                        <constraint firstItem="3Ne-S7-zgx" firstAttribute="top" secondItem="cBX-lJ-goe" secondAttribute="top" id="bjC-8U-yWk"/>
+                        <constraint firstAttribute="trailing" secondItem="1VF-pW-KCi" secondAttribute="trailing" id="eut-Lb-kI9"/>
+                        <constraint firstAttribute="height" constant="106" id="gkI-uA-qVF"/>
+                        <constraint firstItem="3Ne-S7-zgx" firstAttribute="leading" secondItem="cBX-lJ-goe" secondAttribute="leading" id="raM-GE-fnu"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="eut-Lb-kI9"/>
+                            <exclude reference="43k-Xz-ZMc"/>
+                            <exclude reference="OrA-HK-e5D"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TH4-tL-Wql" userLabel="Bottom View">
+                    <rect key="frame" x="0.0" y="197" width="600" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2eh-tj-UAg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TH4-tL-Wql" secondAttribute="trailing" id="3jj-Mx-xWA"/>
+                <constraint firstAttribute="trailing" secondItem="C3F-8G-rqg" secondAttribute="trailing" id="5mK-Is-DqZ"/>
+                <constraint firstItem="TH4-tL-Wql" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ax4-Ov-KKf"/>
+                <constraint firstItem="Q5h-N5-AWB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GPC-KL-1FF"/>
+                <constraint firstItem="C3F-8G-rqg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HQl-zc-lNV"/>
+                <constraint firstAttribute="bottom" secondItem="TH4-tL-Wql" secondAttribute="bottom" id="Nam-gG-30z"/>
+                <constraint firstItem="S9n-ag-aRC" firstAttribute="top" secondItem="Q5h-N5-AWB" secondAttribute="bottom" constant="5" id="RV2-Co-QrV"/>
+                <constraint firstItem="cBX-lJ-goe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rs2-J1-X9u"/>
+                <constraint firstAttribute="trailing" secondItem="S9n-ag-aRC" secondAttribute="trailing" id="SRv-69-CMg"/>
+                <constraint firstItem="S9n-ag-aRC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TqA-Xf-stQ"/>
+                <constraint firstItem="Q5h-N5-AWB" firstAttribute="top" secondItem="C3F-8G-rqg" secondAttribute="bottom" constant="8" id="mte-1e-7vE"/>
+                <constraint firstAttribute="trailing" secondItem="Q5h-N5-AWB" secondAttribute="trailing" id="pZF-6d-ftk"/>
+                <constraint firstItem="C3F-8G-rqg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qHh-J3-7oO"/>
+                <constraint firstItem="cBX-lJ-goe" firstAttribute="top" secondItem="S9n-ag-aRC" secondAttribute="bottom" constant="1" id="rvD-lh-tU3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnOTP" destination="1VF-pW-KCi" id="Jrf-ge-7Zt"/>
+                <outlet property="btnPassword" destination="3Ne-S7-zgx" id="KFJ-f3-G2T"/>
+                <outlet property="lblMsg" destination="Q5h-N5-AWB" id="NA5-um-ofi"/>
+                <outlet property="lblOTP" destination="T0v-R4-W9I" id="nlc-xq-VWN"/>
+                <outlet property="lblPassword" destination="y8A-o8-QL0" id="94M-wc-eXj"/>
+                <outlet property="lblRetry" destination="S9n-ag-aRC" id="KAt-Gi-f8B"/>
+                <outlet property="vwBottom" destination="TH4-tL-Wql" id="yag-B2-vKv"/>
+                <outlet property="vwTop" destination="C3F-8G-rqg" id="P8h-Jq-x6R"/>
+                <outletCollection property="gestureRecognizers" destination="0mr-Uy-O5B" appends="YES" id="nGS-bq-tel"/>
+                <outletCollection property="gestureRecognizers" destination="mYt-h5-sxW" appends="YES" id="5MI-Tv-Nwq"/>
+            </connections>
+            <point key="canvasLocation" x="119" y="152.5"/>
+        </view>
+        <swipeGestureRecognizer direction="up" id="0mr-Uy-O5B" userLabel="Swipe Up">
+            <connections>
+                <action selector="swipeUpGR:" destination="iN0-l3-epB" id="f9k-ND-ymr"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="down" id="mYt-h5-sxW" userLabel="Swipe Down">
+            <connections>
+                <action selector="swipeDownGR:" destination="iN0-l3-epB" id="gOi-s6-Nef"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="PUCBOtpIcon" width="125" height="125"/>
+        <image name="PUCBPasswordIcon" width="125" height="125"/>
+    </resources>
+</document>
