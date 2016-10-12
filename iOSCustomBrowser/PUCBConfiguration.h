@@ -31,6 +31,7 @@
 @property (nonatomic, assign) BOOL isMagicRetry;
 @property (nonatomic, assign) BOOL isAutoOTPSelect;
 @property (nonatomic, assign) BOOL shouldShowPayULoader;
+@property (nonatomic, assign) BOOL enableWKWebView;
 @property (nonatomic, assign) PUCBBankSimulator bankSimulatorType;
 
 @end

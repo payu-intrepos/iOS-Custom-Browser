@@ -7,11 +7,13 @@
 //
 
 #import "PayU_CB_SDK.h"
+#import <WebKit/WebKit.h>
 #import "PUCBConfiguration.h"
 
 NS_ENUM(NSInteger) {
     PUCBNilArgument = 100,
-    PUCBInvalidMerchantKey = 101
+    PUCBInvalidMerchantKey = 101,
+    PUCBBankSimulatorNotSupported = 102
 };
 
 
@@ -46,14 +48,15 @@ NS_ENUM(NSInteger) {
  * This method gets called when user presses back button
  * You must return NO from this if you want to show your own view (like alert)
  */
-- (BOOL)shouldDismissVCOnBackPress;
+- (void)shouldDismissVCOnBackPress;
 
 @end
 
 
-@interface PUCBWebVC : UIViewController <UIWebViewDelegate>
+@interface PUCBWebVC : UIViewController <UIWebViewDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
 
 @property (strong, nonatomic) UIWebView *vwWebView;
+@property (strong, nonatomic) WKWebView *vwWKWebView;
 @property (weak, nonatomic) id <PUCBWebVCDelegate> cbWebVCDelegate;
 
 /*!
@@ -70,8 +73,8 @@ NS_ENUM(NSInteger) {
  * @param [url]                  [NSURL type]
  */
 - (instancetype)initWithPostParam:(NSString*)postParam
-                          url:(NSURL*)url
-                  merchantKey:(NSString*)key
+                        url:(NSURL*)url
+                merchantKey:(NSString*)key
                             error:(NSError**)error;
 
 - (instancetype)initWithNSURLRequest:(NSURLRequest*)request
