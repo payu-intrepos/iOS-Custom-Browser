@@ -49,6 +49,11 @@ NS_ENUM(NSInteger) {
  * You must return NO from this if you want to show your own view (like alert)
  */
 - (void)shouldDismissVCOnBackPress;
+    
+/*!
+ * This method gets called in case of transaction gets terminated without getting any response
+ */
+ - (void)PayUTerminateTransaction;
 
 @end
 

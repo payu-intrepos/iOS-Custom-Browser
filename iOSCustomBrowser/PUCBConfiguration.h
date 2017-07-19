@@ -6,8 +6,10 @@
 //  Copyright © 2016 PayU. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "CBConstant.h"
+#import "PUCBReviewOrderConfig.h"
 
 /*!
  * This class is used to store some data that is available for all classes.
@@ -33,6 +35,8 @@
 @property (nonatomic, assign) BOOL shouldShowPayULoader;
 @property (nonatomic, assign) BOOL enableWKWebView;
 @property (nonatomic, assign) PUCBBankSimulator bankSimulatorType;
-
+@property (nonatomic, strong) PUCBReviewOrderConfig *reviewOrderConfig;
+@property (nonatomic, assign) NSUInteger surePayCount;
+@property (nonatomic, strong) NSString *paymentURL, *paymentPostParam;
 @end
 

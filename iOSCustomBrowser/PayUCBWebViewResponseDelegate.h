@@ -32,4 +32,9 @@
  */
 - (void)PayUConnectionError:(NSDictionary *)notification;
 
+@optional
+- (void)PayUTxnCancelledWithBackPress;
+
+- (void)PayUTerminateTransaction;
+
 @end

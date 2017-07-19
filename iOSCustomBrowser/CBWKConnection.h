@@ -18,6 +18,7 @@
 @property (nonatomic, copy) NSString *postData;
 @property (nonatomic, copy) NSString *urlString;
 @property (nonatomic, weak) UIViewController *vcToPresentAlert;
+@property BOOL didMakePostRequest;
 
 #pragma mark - WKWebView scriptMessageHandler Delegate
 
