@@ -1,4 +1,5 @@
 # iOS-CB
-iOS Custom Browser for UIWebView version 5.2.1
+
+Integration document of iOS custom browser can be found at the link below
 
 https://github.com/payu-intrepos/Documentations/wiki/9.-iOS-Custom-Browser#si
