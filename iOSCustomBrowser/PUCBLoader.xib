@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,31 +20,34 @@
                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gc4-Wn-9yD">
-                    <rect key="frame" x="175" y="136" width="250" height="200"/>
+                    <rect key="frame" x="175" y="200" width="250" height="200"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Processing Your Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-us-Xjg">
-                            <rect key="frame" x="8" y="104" width="234" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PUCBLoader1" translatesAutoresizingMaskIntoConstraints="NO" id="Nqh-V7-mT7">
+                            <rect key="frame" x="100" y="31" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing Your Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-us-Xjg">
+                            <rect key="frame" x="29.5" y="104" width="191" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Wait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzL-xf-R9p">
-                            <rect key="frame" x="33" y="148" width="184" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Wait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzL-xf-R9p">
+                            <rect key="frame" x="87.5" y="148" width="75" height="17"/>
                             <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PUCBLoader1" translatesAutoresizingMaskIntoConstraints="NO" id="Nqh-V7-mT7">
-                            <rect key="frame" x="109" y="31" width="50" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="D9P-pH-whe"/>
+                        <constraint firstItem="nOF-us-Xjg" firstAttribute="top" secondItem="Nqh-V7-mT7" secondAttribute="bottom" constant="23" id="HcD-uD-biJ"/>
+                        <constraint firstItem="wzL-xf-R9p" firstAttribute="top" secondItem="nOF-us-Xjg" secondAttribute="bottom" constant="23" id="KuR-RB-SV9"/>
                         <constraint firstAttribute="height" constant="200" id="Tuw-LW-E5E"/>
+                        <constraint firstItem="Nqh-V7-mT7" firstAttribute="top" secondItem="gc4-Wn-9yD" secondAttribute="top" constant="31" id="YCp-cY-ON8"/>
+                        <constraint firstItem="Nqh-V7-mT7" firstAttribute="centerX" secondItem="gc4-Wn-9yD" secondAttribute="centerX" id="Ywy-54-WAq"/>
+                        <constraint firstItem="nOF-us-Xjg" firstAttribute="centerX" secondItem="gc4-Wn-9yD" secondAttribute="centerX" id="jlc-8N-L6m"/>
+                        <constraint firstItem="wzL-xf-R9p" firstAttribute="centerX" secondItem="gc4-Wn-9yD" secondAttribute="centerX" id="o6L-hR-iUY"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -65,7 +68,7 @@
                 <constraint firstItem="gc4-Wn-9yD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QuW-vX-RkE"/>
                 <constraint firstAttribute="trailing" secondItem="nyT-aY-fDt" secondAttribute="trailing" id="cdT-9f-YTM"/>
                 <constraint firstItem="nyT-aY-fDt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gea-M0-y8N"/>
-                <constraint firstItem="gc4-Wn-9yD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-64" id="kl9-RL-jk2"/>
+                <constraint firstItem="gc4-Wn-9yD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kl9-RL-jk2"/>
                 <constraint firstAttribute="bottom" secondItem="nyT-aY-fDt" secondAttribute="bottom" id="qXa-Wg-qtt"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

@@ -43,6 +43,10 @@ NS_ENUM(NSInteger) {
  */
 - (void)PayUTransactionCancel;
 
+- (void)PayUSuccessResponse:(id) payUResponse SURLResponse:(id) surlResponse;
+    
+- (void)PayUFailureResponse:(id) payUResponse FURLResponse:(id) furlResponse;
+
 @optional
 /*!
  * This method gets called when user presses back button

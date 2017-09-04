@@ -37,4 +37,8 @@
 
 - (void)PayUTerminateTransaction;
 
+- (void)PayUSuccessResponse:(id) payUResponse SURLResponse:(id) surlResponse;
+
+- (void)PayUFailureResponse:(id) payUResponse FURLResponse:(id) furlResponse;
+
 @end
