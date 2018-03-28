@@ -38,5 +38,8 @@
 @property (nonatomic, strong) PUCBReviewOrderConfig *reviewOrderConfig;
 @property (nonatomic, assign) NSUInteger surePayCount;
 @property (nonatomic, strong) NSString *paymentURL, *paymentPostParam;
+
+@property (nonatomic, strong) NSString *htmlData;
+
 @end
 
