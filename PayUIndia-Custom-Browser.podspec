@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                             :tag => "v5.7.2" }
   s.documentation_url   = "https://github.com/payu-intrepos/Documentations/wiki/9.-iOS-Custom-Browser#si"
   
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "7.0"
   s.vendored_frameworks = 'PayUCustomBrowser.framework'
 
   s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC'} 
