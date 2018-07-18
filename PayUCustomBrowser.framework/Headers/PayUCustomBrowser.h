@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double PayUCustomBrowserVersionNumber;
 FOUNDATION_EXPORT const unsigned char PayUCustomBrowserVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PayUCustomBrowser/PublicHeader.h>
-
+#import <PayUCustomBrowser/PayU_CB_SDK.h>
 
