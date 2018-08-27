@@ -30,9 +30,9 @@
 
 /*!
  * This method is called from Merchant's App to initialize CB.
- * @param  [view]    [UIView type]
- * @param  [webView] [id type]
- * @return [obj]     [PUCBBaseConnection type]
+ * @param  view UIView on which WebView needs to be displayed
+ * @param  webView instance of WebView (It can be either WKWebView or UIWebView)
+ * @return obj instance of PUCBBaseConnection (or instance of its subclass, depending upon class on which it is called)
  */
 -(instancetype)init:(UIView *)view webView:(id)webView;
 
@@ -45,5 +45,12 @@
  * This method is used to show the payUActivityIndicator.
  */
 - (void)payUActivityIndicator;
+
+/*
+ * These methods helps in minimizing / maximizing CB screen on WebView
+ */
+
+- (void)minimizeCB;
+- (void)maximizeCB;
 
 @end

@@ -17,9 +17,8 @@
 @interface PUCBConfiguration : NSObject
 
 /*!
- * This method returns singleton object.
- * @return [obj]                [PUCBSharedDataManager Type]
- * @see    [initUniqueInstance]
+ * This method returns singleton object. Use this to configure features provided by CB
+ * @return obj The singleton sintance of PUCBConfiguration class
  */
 +(instancetype)getSingletonInstance;
 

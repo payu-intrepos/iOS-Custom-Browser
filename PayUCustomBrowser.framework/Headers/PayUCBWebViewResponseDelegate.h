@@ -15,20 +15,21 @@
 @protocol PayUCBWebViewResponseDelegate <NSObject>
 
 /*!
- * This method gets called when transaction is successfull. It logs txn_success event.
- * @param [response]            [id type]
+ * This method gets called when transaction is successfull.
+ * @param response Response sent by PayU on successful completion of Payment.
+ *
+ * @note Hash inside response should be compared with server calculated hash to rule out possibility of tampering of data.
+ * This should be done at server's end.
  */
 - (void)PayUSuccessResponse:(id)response;
 
 /*!
- * This method gets called when transaction fails. It logs txn_fail event.
- * @param [response]            [id type]
+ * @param response Response sent by PayU when the transaction gets failed
  */
 - (void)PayUFailureResponse:(id)response;
 
 /*!
- * This method gets called in case of network error
- * @param [notification]            [NSDictionary type]
+ * @param notification An NSDictionary containing details about the network error
  */
 - (void)PayUConnectionError:(NSDictionary *)notification;
 
