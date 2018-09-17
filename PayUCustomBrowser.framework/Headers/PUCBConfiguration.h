@@ -39,6 +39,7 @@
 @property (nonatomic, strong) NSString *paymentURL, *paymentPostParam;
 
 @property (nonatomic, strong) NSString *htmlData;
+@property (nonatomic, assign) NSTimeInterval merchantResponseTimeout; //Default timeout is 5 seconds.
 
 @end
 
