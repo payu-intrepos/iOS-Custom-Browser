@@ -6,7 +6,7 @@
 *There is almost no additional integration required to update from CB 5.x to 5.8.*
 
 ### iOS Custom Browser's compelling Features:
-#### Auto fill SMS into bank pages' OTP fields (Available on iOS 12)
+#### Auto fill SMS into bank pages' OTP fields (Available on iOS 12, CB 5.8+)
 
 CB helps by presenting OTP as suggestion over keyboard on bank page. With this feature, iOS users can now transact as fast as Android users as mannual entry of OTP is no longer required.
 
@@ -57,5 +57,5 @@ Reduce your apps memory foot print by using CB's WKWebView as default WebView. U
 
 ### 
 
-### Integration document of iOS custom browser can be found [here](https://github.com/payu-intrepos/Documentations/wiki/9.-iOS-Custom-Browser#si)
+### Steps to integrate iOS custom browser can be found [here](https://github.com/payu-intrepos/Documentations/wiki/9.-iOS-Custom-Browser#si)
 
