@@ -1,10 +1,3 @@
-### Important Update - CB versions 5.7.2 and below are deprecated
-*On iOS 12 and above versions of iOS, Older CB UI (versions 5.7.2 and below) will not appear on the app. The app users will still be able to complete transaction with CB's webview, but they will not be able to use any of its great features.*
-
-*This has been done to prevent crashes. We identified some uncommon keyboard notifications on tapping OTP suggestion above keyboard in iOS 12. This has been handled in CB 5.8.*
-
-*There is almost no additional integration required to update from CB 5.x to 5.8.*
-
 ### iOS Custom Browser's compelling Features:
 #### Auto fill SMS into bank pages' OTP fields (Available on iOS 12, CB 5.8+)
 
