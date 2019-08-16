@@ -50,5 +50,5 @@ Reduce your apps memory foot print by using CB's WKWebView as default WebView. U
 
 ### 
 
-### Steps to integrate iOS custom browser can be found [here](https://github.com/payu-intrepos/Documentations/wiki/9.-iOS-Custom-Browser#si)
+### Steps to integrate iOS custom browser can be found [here](https://github.com/payu-intrepos/Documentations/wiki/iOS-Custom-Browser)
 
