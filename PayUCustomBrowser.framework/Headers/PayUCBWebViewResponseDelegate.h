@@ -16,20 +16,14 @@
 
 /*!
  * This method gets called when transaction is successfull.
- *
  * @note Hash inside response should be compared with server calculated hash to rule out possibility of tampering of data.
  * This should be done at server's end.
  */
 - (void)PayUSuccessResponse:(id)response;
 
-
 - (void)PayUFailureResponse:(id)response;
 
-/*!
- * @param notification An NSDictionary containing details about the network error
- */
 - (void)PayUConnectionError:(NSDictionary *)notification;
-
 
 @optional
 - (void)PayUTxnCancelledWithBackPress;
