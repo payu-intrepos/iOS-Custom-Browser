@@ -20,12 +20,10 @@
 - (instancetype) init ATTRIBUTE_INIT;
 - (instancetype) new ATTRIBUTE_NEW;
 
-@property (nonatomic, assign) BOOL isMagicRetry;
 @property (nonatomic, copy) NSString *txnID;
 @property (nonatomic, copy) NSString *merchantKey;
 @property (weak, nonatomic) id <PayUCBWebViewResponseDelegate> cbWebViewResponseDelegate;
 @property (nonatomic, assign) BOOL isAutoOTPSelect;
-@property (nonatomic, assign) PUCBBankSimulator bankSimulatorType;
 @property (nonatomic, strong) PUCBConfiguration *cbConfig;
 
 /*!

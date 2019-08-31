@@ -16,7 +16,7 @@
 #pragma mark - UIWebView delegate
 
 /*!
- * This method must be called from UIWebView delegate method from Merchant's App.
+ * This method must be called from UIWebView delegate method from Merchant's App
  */
 - (void)payUwebView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request;
 
