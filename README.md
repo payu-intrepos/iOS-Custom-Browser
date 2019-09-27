@@ -5,10 +5,6 @@ CB helps by presenting OTP as suggestion over keyboard on bank page. With this f
 
 With CB engineering, OTP suggestion will be visible on all bank pages, irrespective of the fact that CB UI is visible there or not. For illustration, see below. OTP suggestion is visible even when user taps on Citi Bank's OTP field.
 
-<p align="center">
-  <img src ="https://media.giphy.com/media/kG16kdfY2N9oizUeTL/giphy.gif" />
-</p>
-
 #### SurePay - In case of flaky internet connection, help users to restore otherwise failing transaction
 
 SurePay can recover the failing transaction due to internet connectivity issues. It can recover the transantion from any failing hop. If the case of no-internet-connection, we display a screen which gives user 3 options:
