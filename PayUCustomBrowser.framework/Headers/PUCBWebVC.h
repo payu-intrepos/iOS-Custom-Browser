@@ -76,9 +76,8 @@ NS_ENUM(NSInteger) {
 @end
 
 
-@interface PUCBWebVC : UIViewController <UIWebViewDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
+@interface PUCBWebVC : UIViewController <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
 
-@property (strong, nonatomic) UIWebView *vwWebView;
 @property (strong, nonatomic) WKWebView *vwWKWebView;
 @property (weak, nonatomic) id <PUCBWebVCDelegate> cbWebVCDelegate;
 

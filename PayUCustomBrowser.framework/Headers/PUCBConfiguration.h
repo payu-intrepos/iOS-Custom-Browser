@@ -30,7 +30,6 @@
 @property (nonatomic, strong) NSString *transactionId;
 @property (nonatomic, assign) BOOL isAutoOTPSelect;
 @property (nonatomic, assign) BOOL shouldShowPayULoader;
-@property (nonatomic, assign) BOOL enableWKWebView;
 @property (nonatomic, strong) PUCBReviewOrderConfig *reviewOrderConfig;
 @property (nonatomic, assign) NSUInteger surePayCount;
 @property (nonatomic, strong) NSString *paymentURL, *paymentPostParam;
