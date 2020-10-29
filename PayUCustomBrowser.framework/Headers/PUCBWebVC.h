@@ -15,8 +15,9 @@ NS_ENUM(NSInteger) {
     PUCBInvalidMerchantKey = 101,
 };
 
-
 @protocol PUCBWebVCDelegate <NSObject>
+
+typedef void (^completionMarkPayUTxnCancelInDB)(BOOL success);
 
 @required
 /*!
@@ -104,5 +105,7 @@ NS_ENUM(NSInteger) {
 - (instancetype)initWithNSURLRequest:(NSURLRequest*)request
                          merchantKey:(NSString*)key
                                error:(NSError**)error;
+
+- (void)markPayUTxnCancelInDBWithCompletionBlock:(completionMarkPayUTxnCancelInDB) completion;
 
 @end
