@@ -50,7 +50,7 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-Custom-Browser"
-podVersion="6.1"
+podVersion="6.1.1"
 
 podSpec="${podName}.podspec"
 tag="${podName}_${podVersion}"

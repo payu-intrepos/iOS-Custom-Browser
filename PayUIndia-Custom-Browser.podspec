@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
 
   s.source              = { :git => "https://github.com/payu-intrepos/iOS-Custom-Browser.git", 
                             :tag => "#{s.name}_#{s.version}" }
-  s.documentation_url   = "https://app.gitbook.com/@payumobile/s/sdk-integration/ios/ios-custom-browser"
   
   s.ios.deployment_target = "8.0"
   s.vendored_frameworks = 'PayUCustomBrowser.framework'
