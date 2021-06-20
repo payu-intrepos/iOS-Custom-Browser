@@ -32,7 +32,7 @@ createRemoteTag() {
 }
 
 podLibLint() {
-	command="pod lib lint $1"
+	command="pod lib lint $1 --allow-warnings --verbose"
 	echo "Executing ---- ${command}"
 	eval "$command"
 }
@@ -50,7 +50,7 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-Custom-Browser"
-podVersion="6.1.1"
+podVersion="7.0.0"
 
 podSpec="${podName}.podspec"
 tag="${podName}_${podVersion}"

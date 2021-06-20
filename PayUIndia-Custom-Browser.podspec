@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-Custom-Browser"
-  s.version             = "6.1.1"
+  s.version             = "7.0.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/iOS-Custom-Browser"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                             :tag => "#{s.name}_#{s.version}" }
   
   s.ios.deployment_target = "8.0"
-  s.vendored_frameworks = 'PayUCustomBrowser.framework'
+  s.vendored_frameworks = 'PayUCustomBrowser.xcframework'
 
   s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC'} 
 
