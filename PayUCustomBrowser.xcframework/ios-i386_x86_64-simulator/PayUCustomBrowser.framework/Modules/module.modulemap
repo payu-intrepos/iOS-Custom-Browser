@@ -1,6 +1,0 @@
-framework module PayUCustomBrowser {
-  umbrella header "PayUCustomBrowser.h"
-
-  export *
-  module * { export * }
-}
