@@ -50,10 +50,10 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-Custom-Browser"
-podVersion="7.1.0"
+podVersion="9.0.0"
 
 podSpec="${podName}.podspec"
-tag="${podName}_${podVersion}"
+tag="${podVersion}"
 
 podLibLint ${podSpec} &&
 createLocalTag ${tag} &&
