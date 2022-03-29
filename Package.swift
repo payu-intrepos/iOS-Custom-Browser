@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "PayUIndia-Custom-Browser",
+    platforms: [.iOS(.v11)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -12,6 +13,6 @@ let package = Package(
             targets: ["PayUCustomBrowser"]),
     ],
     targets: [
-            .binaryTarget(name: "PayUCustomBrowser", path: "./PayUCustomBrowser.xcframework")
-        ]
+        .binaryTarget(name: "PayUCustomBrowser", path: "./PayUCustomBrowser.xcframework")
+    ]
 )
