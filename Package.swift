@@ -24,7 +24,7 @@ let package = Package(
                     "PayUCustomBrowser",
                     "PayUIndia-Analytics"
                 ],
-                path: "/PayUIndia-CustomBrowserWrapper"
+                path: "PayUIndia-CustomBrowserWrapper"
             )
     ]
 )
