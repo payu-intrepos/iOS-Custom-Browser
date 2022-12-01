@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PayUIndia-Analytics",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS",
+        "state": {
+          "branch": null,
+          "revision": "c89dd006e97392919aaf3cd7393fde753e4f8ec6",
+          "version": "3.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -94,7 +94,7 @@ typedef void (^completionMarkPayUTxnCancelInDB)(BOOL success);
 
 
 /*!
- * This method is one of the two designated initializer of PUCBWebVC class
+ * This method is one of the three designated initializer of PUCBWebVC class
  */
 
 - (instancetype)initWithPostParam:(NSString*)postParam
@@ -103,11 +103,16 @@ typedef void (^completionMarkPayUTxnCancelInDB)(BOOL success);
                             error:(NSError**)error;
 
 /*!
- * This method is one of the two designated initializer of PUCBWebVC class
+ * This method is one of the three designated initializer of PUCBWebVC class
  */
 - (instancetype)initWithNSURLRequest:(NSURLRequest*)request
                          merchantKey:(NSString*)key
                                error:(NSError**)error;
+
+/*!
+ * This method is one of the three designated initializer of PUCBWebVC class
+ */
+- (instancetype)initWithJSON:(NSDictionary*)json error:(NSError**)error;
 
 - (void)markPayUTxnCancelInDBWithCompletionBlock:(completionMarkPayUTxnCancelInDB) completion;
 
