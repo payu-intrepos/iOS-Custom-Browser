@@ -3,28 +3,29 @@
 
 import PackageDescription
 
+let VERSION_ANALYTICS_KIT: PackageDescription.Version = "3.0.0"
+
 let package = Package(
     name: "PayUIndia-Custom-Browser",
     platforms: [.iOS(.v11)],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PayUIndia-Custom-Browser",
-            targets: ["PayUIndia-CustomBrowserTarget"]),
+            targets: ["PayUIndia-CustomBrowserTarget"]
+        )
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(name: "PayUIndia-Analytics",url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: "3.0.0")
+        .package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: VERSION_ANALYTICS_KIT)
     ],
     targets: [
         .binaryTarget(name: "PayUCustomBrowser", path: "./PayUCustomBrowser.xcframework"),
         .target(
-                name: "PayUIndia-CustomBrowserTarget",
-                dependencies: [
-                    "PayUCustomBrowser",
-                    "PayUIndia-Analytics"
-                ],
-                path: "PayUIndia-CustomBrowserWrapper"
-            )
+            name: "PayUIndia-CustomBrowserTarget",
+            dependencies: [
+                "PayUCustomBrowser",
+                "PayUIndia-Analytics"
+            ],
+            path: "PayUIndia-CustomBrowserWrapper"
+        )
     ]
 )

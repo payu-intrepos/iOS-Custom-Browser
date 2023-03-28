@@ -1,6 +1,16 @@
+# Supress warning messages.
+original_verbose, $VERBOSE = $VERBOSE, nil
+
+# Read file
+vars_from_file = File.read("../../PayUParamsKit/GitHub/Version.txt")
+eval(vars_from_file)
+
+# Activate warning messages again.
+$VERBOSE = original_verbose
+
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-Custom-Browser"
-  s.version             = "9.2.0"
+  s.version             = CUSTOM_BROWSER_POD_VERSION
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/iOS-Custom-Browser"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -21,4 +31,9 @@ Pod::Spec.new do |s|
   s.library             = "z"
   s.requires_arc        = true
   s.dependency            'PayUIndia-Analytics', '3.0'
+ 
+  CUSTOM_BROWSER_PODSPEC_DEPENDENCIES.each do |dependency|
+    dependency
+  end
+  
 end
