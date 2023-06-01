@@ -4,6 +4,7 @@
 import PackageDescription
 
 let VERSION_ANALYTICS_KIT: PackageDescription.Version = "3.0.0"
+let VERSION_COMMON_UI: PackageDescription.Version = "1.0.0"
 
 let package = Package(
     name: "PayUIndia-Custom-Browser",
@@ -15,7 +16,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: VERSION_ANALYTICS_KIT)
+        .package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: VERSION_ANALYTICS_KIT),
+        .package(name: "PayUIndia-CommonUI", url: "https://github.com/payu-intrepos/PayUCommonUI-iOS", from: VERSION_COMMON_UI)
     ],
     targets: [
         .binaryTarget(name: "PayUCustomBrowser", path: "./PayUCustomBrowser.xcframework"),
@@ -23,7 +25,8 @@ let package = Package(
             name: "PayUIndia-CustomBrowserTarget",
             dependencies: [
                 "PayUCustomBrowser",
-                "PayUIndia-Analytics"
+                "PayUIndia-Analytics",
+                "PayUIndia-CommonUI"
             ],
             path: "PayUIndia-CustomBrowserWrapper"
         )

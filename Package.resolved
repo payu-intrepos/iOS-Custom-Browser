@@ -9,6 +9,15 @@
           "revision": "c89dd006e97392919aaf3cd7393fde753e4f8ec6",
           "version": "3.0.0"
         }
+      },
+      {
+        "package": "PayUIndia-CommonUI",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUCommonUI-iOS",
+        "state": {
+          "branch": null,
+          "revision": "2f9d9dccbb2f1d9838a3ee7a2a2ccaf7e0325fac",
+          "version": "1.0.0"
+        }
       }
     ]
   },

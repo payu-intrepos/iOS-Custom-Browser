@@ -40,6 +40,7 @@
  * This method is used to show the payUActivityIndicator.
  */
 - (void)payUActivityIndicator;
+- (void)showPayUActivityIndicator;
 
 /*
  * These methods helps in minimizing / maximizing CB screen on WebView
