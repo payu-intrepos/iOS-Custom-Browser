@@ -4,7 +4,7 @@
 import PackageDescription
 
 let VERSION_ANALYTICS_KIT: PackageDescription.Version = "3.0.0"
-let VERSION_COMMON_UI: PackageDescription.Version = "1.0.0"
+let VERSION_COMMON_UI: PackageDescription.Version = "1.1.0"
 
 let package = Package(
     name: "PayUIndia-Custom-Browser",

@@ -30,6 +30,7 @@
 @property (nonatomic, assign) BOOL isAutoOTPSelect;
 @property (nonatomic, assign) BOOL isAutoOTPSubmit;
 @property (nonatomic, assign) BOOL shouldShowPayULoader;
+@property (nonatomic, assign) BOOL showUserCancellationDialogue;
 @property (nonatomic, strong) NSString *paymentURL, *paymentPostParam;
 @property (nonatomic, strong) NSString *htmlData;
 @property (nonatomic, assign) NSTimeInterval merchantResponseTimeout; //Default timeout is 5 seconds.
