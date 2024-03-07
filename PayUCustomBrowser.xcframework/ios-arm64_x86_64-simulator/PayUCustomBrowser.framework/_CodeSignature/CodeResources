@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		6vhYRQH2vH/En6EvvWU2YXXlwOU=
+		5hd0IRxmqtn420tup/yZ2f4Ky7E=
 		</data>
 		<key>Headers/CBConstant.h</key>
 		<data>
@@ -46,31 +46,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		n0EA7h1DKVp6i+rf0X2VNyGQbkk=
+		WZo35uRDs/Ocn71PG2YUq98Pn94=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		t2F074WqVBnUC2JhsylQPASmtJI=
+		rJNdTrx/WC4KSKEy+KwhFOK03X0=
 		</data>
 		<key>PUCBAllPaymentOption.nib</key>
 		<data>
-		4WK242LxMGd03eNCo/nfHQ6nHbE=
+		4uuX9fNbDDPNHF6bzE3J4TRJeZk=
 		</data>
 		<key>PUCBApproveView.nib</key>
 		<data>
-		TIzd4Q+PFLsx3f/sg8XcjwhQTsc=
+		mWFc/HUYeemHNfAg5GGHib4diMw=
 		</data>
 		<key>PUCBCancelTransaction.nib</key>
 		<data>
-		IB3zRgZWwYCWWR9gEDDaBM+FnB0=
+		bqzOUYTBFTcnKmAa914DFmxRBMw=
 		</data>
 		<key>PUCBRegisterOption.nib</key>
 		<data>
-		YCitrwraa6K/gj+dKBrMZ9tXB44=
+		br/cjvYuHG291/trXWTLXcNWVTg=
 		</data>
 		<key>PUCBUserIdNB.nib</key>
 		<data>
-		7ihEKJUnXBjN8GslX0ttdUNfOAc=
+		fAg00xLjWz2Q8mvP4fUHlLQLSJQ=
 		</data>
 		<key>PUCBWKTest.html</key>
 		<data>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXZyYmDZKqbuhq6rz+Fab94HAL4slc3WRCmikn4/fYY=
+			ez++juMICCrz1CZdZi4+0QqhDKBY6pMZZa1pG41KGbI=
 			</data>
 		</dict>
 		<key>Headers/CBConstant.h</key>
@@ -157,42 +157,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uTeqLIKu8euVOfIhORuakFciz+RrhY1wR1b7wfLKxiA=
+			wZmcISD4P38XlEcNKqA3dYoSfOG+x8dSo/RELB/uRFs=
 			</data>
 		</dict>
 		<key>PUCBAllPaymentOption.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bQuB1S+oJ3CdCY3ReRJBU92NXt9WWzFtyaUHE1iTFrQ=
+			qPdotThDEejdrjMjIIzGkGY/w5rXFGiXRqi7wReK89o=
 			</data>
 		</dict>
 		<key>PUCBApproveView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PQBRYPwcxoU7DcXwHXOjr+XeS6+hK4spPSQBHCJCfMo=
+			4FYjRQjHiVLIjQ1A5OFcT56bexy+ImqtDPriR0RpKfg=
 			</data>
 		</dict>
 		<key>PUCBCancelTransaction.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AySU64Y+srXR7KwT2Dmc9N8X+RSibSmikJaqCBEKAKI=
+			lvrUITQ+IuiexWDr/l7U4WIcZ0bK7lV0Bv7V1tUk8lk=
 			</data>
 		</dict>
 		<key>PUCBRegisterOption.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cm0uSuCVggQ5RlAVoaGE9jnbcOEs2ov7pHnp/mccOoE=
+			flyN2zt/Ecg4gmbc6UFZ9/uF8K8UIOQ10PUu4AuZf9o=
 			</data>
 		</dict>
 		<key>PUCBUserIdNB.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ihDmB28rriuLmAFRIVWZ9Zjd87Iw0EnX/HLN+m9xwY=
+			LnDMax8Ezisq+DwwELiv0IX2qWWjESwweI3BDN/JD8Y=
 			</data>
 		</dict>
 		<key>PUCBWKTest.html</key>

@@ -8,7 +8,7 @@ let VERSION_COMMON_UI: PackageDescription.Version = "1.1.0"
 
 let package = Package(
     name: "PayUIndia-Custom-Browser",
-    platforms: [.iOS(.v11)],
+    platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "PayUIndia-Custom-Browser",
