@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.framework           = 'WebKit'
   s.library             = "z"
   s.requires_arc        = true
-  s.dependency            'PayUIndia-Analytics', '3.0'
+  s.dependency            'PayUIndia-Analytics', '~>3.0'
 end
