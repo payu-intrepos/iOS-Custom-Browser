@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "PayUIndia-Custom-Browser",
-    platforms: [.iOS(.v11)],
+    platforms: [.iOS(.v12)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "PayUIndia-Analytics",url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: "3.0.0")
+        .package(name: "PayUIndia-Analytics",url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: "3.0.1")
     ],
     targets: [
         .binaryTarget(name: "PayUCustomBrowser", path: "./PayUCustomBrowser.xcframework"),
