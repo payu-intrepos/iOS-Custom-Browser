@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.library             = "z"
   s.requires_arc        = true
   s.dependency            'PayUIndia-Analytics', '3.0'
-  s.dependency            'PayUIndia-CommonUI', '~>1.1'
+  s.dependency            'PayUIndia-CommonUI', '~>1.2'
 
 end
