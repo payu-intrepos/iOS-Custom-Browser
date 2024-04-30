@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		5hd0IRxmqtn420tup/yZ2f4Ky7E=
+		SJ2U3qi0cj8SVIdWWDSNH21kJMI=
 		</data>
 		<key>Headers/CBConstant.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WZo35uRDs/Ocn71PG2YUq98Pn94=
+		A1wUYdHXsJe4vCiU64dSzmM2ZVY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,6 +80,10 @@
 		<data>
 		pMi7Bx5KYJmUKi4KJFyn4XXjD2s=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		GqeAMkwbcNQeG0K4qQhQh2vHhHo=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -87,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ez++juMICCrz1CZdZi4+0QqhDKBY6pMZZa1pG41KGbI=
+			hhlTvcVEguRpzNzHgmKjF1jQht3QPdsG2wIeeGkRfOc=
 			</data>
 		</dict>
 		<key>Headers/CBConstant.h</key>
@@ -207,6 +211,13 @@
 			<key>hash2</key>
 			<data>
 			Y9WzDSweJng9891xFM7RSb4CeEz1iE7lp3ix9S5sIUM=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PkqTy+hqzvfdfgY6KMhJmS9Vbn9SytxfN8HosOG1RoY=
 			</data>
 		</dict>
 	</dict>
