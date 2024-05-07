@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS",
         "state": {
           "branch": null,
-          "revision": "c89dd006e97392919aaf3cd7393fde753e4f8ec6",
-          "version": "3.0.0"
+          "revision": "dbc0a665638f47f1b4a6b7baa3aab972f68c2967",
+          "version": "3.0.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCommonUI-iOS",
         "state": {
           "branch": null,
-          "revision": "8692d9abf96d9f58bbdd7b079f35b8cd8a98398b",
-          "version": "1.1.0"
+          "revision": "494e2f640cd285c63fbe783740ce6951ba5bd124",
+          "version": "1.2.1"
         }
       }
     ]
