@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-Custom-Browser"
-  s.version             = "10.2.2"
+  s.version             = "11.0.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/iOS-Custom-Browser"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source              = { :git => "https://github.com/payu-intrepos/iOS-Custom-Browser.git", 
                             :tag => "#{s.version}" }
   
-  s.ios.deployment_target = "12.0"
+  s.ios.deployment_target = "13.0"
   s.vendored_frameworks = 'PayUCustomBrowser.xcframework'
 
   s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC'} 
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.framework           = 'WebKit'
   s.library             = "z"
   s.requires_arc        = true
-  s.dependency            'PayUIndia-CommonUI', '~>1.2'
+  s.dependency            'PayUIndia-CommonUI', '~>2.0'
 
 end
