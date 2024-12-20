@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let VERSION_ANALYTICS_KIT: PackageDescription.Version = "4.0.0"
-let VERSION_COMMON_UI: PackageDescription.Version = "2.0.0"
+let VERSION_ANALYTICS_KIT: PackageDescription.Version = "4.0.2"
+let VERSION_COMMON_UI: PackageDescription.Version = "2.0.2"
 
 let package = Package(
     name: "PayUIndia-Custom-Browser",
