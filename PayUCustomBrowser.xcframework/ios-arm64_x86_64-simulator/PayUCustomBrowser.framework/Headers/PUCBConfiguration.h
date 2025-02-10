@@ -29,6 +29,7 @@
 @property (nonatomic, strong) NSString *transactionId;
 @property (nonatomic, assign) BOOL isAutoOTPSelect;
 @property (nonatomic, assign) BOOL isAutoOTPSubmit;
+@property (nonatomic, assign) BOOL isProtectedScreen;
 @property (nonatomic, assign) BOOL shouldShowPayULoader;
 @property (nonatomic, assign) BOOL showUserCancellationDialogue;
 @property (nonatomic, strong) NSString *paymentURL, *paymentPostParam;

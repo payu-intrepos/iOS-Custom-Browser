@@ -7,6 +7,7 @@
 
 #define TRANSACTION_ID @"transaction_id"
 #define KEY @"key"
+#define PROTECT_SCREEN @"is_protected_screen"
 #define AUTO_APPROVE @"auto_approve"
 #define AUTO_SELECT_OTP @"auto_select_otp"
 #define Url @"url"

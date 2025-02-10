@@ -8,6 +8,7 @@
 
 #import <WebKit/WebKit.h>
 #import "PUCBConfiguration.h"
+@import PayUCommonUI;
 
 NS_ENUM(NSInteger) {
     PUCBNilArgument = 100,

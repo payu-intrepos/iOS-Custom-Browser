@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-Custom-Browser"
-  s.version             = "11.0.2"
+  s.version             = "11.1.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/iOS-Custom-Browser"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.framework           = 'WebKit'
   s.library             = "z"
   s.requires_arc        = true
-  s.dependency            'PayUIndia-CommonUI', '~>2.0'
+  s.dependency            'PayUIndia-CommonUI', '~>2.1'
 
 end
