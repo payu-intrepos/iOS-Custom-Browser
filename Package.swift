@@ -16,8 +16,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: VERSION_ANALYTICS_KIT),
-        .package(name: "PayUIndia-CommonUI", url: "https://github.com/payu-intrepos/PayUCommonUI-iOS", from: VERSION_COMMON_UI)
+        .package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", branch: "alpha"),
+        .package(name: "PayUIndia-CommonUI", url: "https://github.com/payu-intrepos/PayUCommonUI-iOS", branch: "alpha")
     ],
     targets: [
         .binaryTarget(name: "PayUCustomBrowser", path: "./PayUCustomBrowser.xcframework"),
